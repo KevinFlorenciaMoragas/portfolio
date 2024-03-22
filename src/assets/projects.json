@@ -1,0 +1,33 @@
+{
+    "data": [
+        {
+            "name": "API PelisCorp",
+            "description": "API desarrollada con SpringBoot utilizando además Spring Security",
+            "photo": "./photos/projectPhoto.jpg",
+            "url": "git",
+            "tec": [
+                "SpringBoot"
+            ]
+        },
+        {
+            "name": "PelisCorp",
+            "description": "Pagina web estilo filmaffinity desarrollada con Angular",
+            "photo": "./photos/projectPhoto.jpg",
+            "url": "git",
+            "tec": [
+                "Angular",
+                "BootStrap"
+            ]
+        },
+        {
+            "name": "React Curso Midudev",
+            "description": "Curso de Midudev sobre React, en el que se han tocado los fundamentos",
+            "photo": "./photos/projectPhoto.jpg",
+            "url": "git",
+            "tec": [
+                "React",
+                "NodeJs"
+            ]
+        }
+    ]
+}
