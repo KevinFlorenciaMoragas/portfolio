@@ -21,7 +21,7 @@ export default function Projects() {
                 projects.map((e, i) => {
                     return (
                         
-                            <Card key={i} name={e.name} description={e.description} photo={e.photo} url={e.url} tec={e.tec}></Card>
+                            <Card key={i} id={e.id} name={e.name} description={e.description} photo={e.photo} url={e.url} tec={e.tec}></Card>
                       
                     )
                 })

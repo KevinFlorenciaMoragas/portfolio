@@ -30,7 +30,7 @@ export default function Card(props) {
                             <a href={props.url}>
                                 <img className='' style={svgStyle} src="./svg/github.svg" ></img>
                             </a>
-                            <Link className='btn btn-link btn-block pl-2' to={`/project/${e.id}`}> Project </Link>
+                            <Link className='btn btn-link btn-block pl-2' to={`/project/${props.id}`}> Project </Link>
 
                         </div>
                     </div>
