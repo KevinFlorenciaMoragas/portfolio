@@ -10,3 +10,7 @@
     background-color: #D1D0D2;
     color:#46494C;
 }
+.container-fluid{
+    min-height: 100vh;
+    height: auto;
+}

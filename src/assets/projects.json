@@ -1,33 +1,48 @@
 {
     "data": [
         {
+            "id":1,
             "name": "API PelisCorp",
-            "description": "API desarrollada con SpringBoot utilizando además Spring Security",
+            "description": "API desarrollada en Java con el framework SpringBoot",
             "photo": "./photos/projectPhoto.jpg",
-            "url": "git",
+            "url": "https://github.com/KevinFlorenciaMoragas/ApiPelisCorp/",
             "tec": [
                 "SpringBoot"
             ]
         },
         {
+            "id":2,
             "name": "PelisCorp",
-            "description": "Pagina web estilo filmaffinity desarrollada con Angular",
+            "description": "Pagina web desarrollada con Angular en la que se pueden ver y comentar diferentes películas, como IMDB, además de gestión de administrador para añadir nuevas películas",
             "photo": "./photos/projectPhoto.jpg",
-            "url": "git",
+            "url": "https://github.com/KevinFlorenciaMoragas/PelisCorp",
             "tec": [
                 "Angular",
                 "BootStrap"
             ]
         },
         {
-            "name": "React Curso Midudev",
-            "description": "Curso de Midudev sobre React, en el que se han tocado los fundamentos",
+            "id":3,
+            "name": "Regira",
+            "description": "Aplicación web desarrollada en React en la que se pueden manejar las tareas de diferentes proyectos, como Trello",
             "photo": "./photos/projectPhoto.jpg",
-            "url": "git",
+            "url": "https://github.com/KevinFlorenciaMoragas/Regira",
             "tec": [
                 "React",
                 "NodeJs"
             ]
+        },
+        {
+            "id":4,
+            "name": "Astrogram",
+            "description": "Web desarrolada integramente con Astro en la que los usuarios pueden subir fotos y ver las fotos de los demás usuarios. La API del proyecto desarrolada en NodeJs",
+            "photo": "./photos/projectPhoto.jpg",
+            "url":"https://github.com/KevinFlorenciaMoragas/Astrogram",
+            "tec":[
+                "Astro",
+                "NodeJs"
+            ]
+
         }
     ]
 }

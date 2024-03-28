@@ -1,10 +1,12 @@
 import React from 'react'
 import './Card.css'
+import { useNavigate, Link } from 'react-router-dom'
 export default function Card(props) {
     const svgStyle = {
         width: 3 + "em",
         marginRight: 1 + "em"
     }
+    const navigate = useNavigate()
     return (
         <>
             <section className='row pt-4'>
@@ -19,15 +21,17 @@ export default function Card(props) {
                             {
                                 props.tec.map((e, i) => {
                                     return (
-                                        <button key={i} className='btn btn-outline-light btn-rounded m-2'>{e}</button>
+                                        <button key={i} className='btn btn-outline-light btn-rounded mb-2 me-2'>{e}</button>
                                     )
                                 })
                             }
                         </div>
-                        <div className='d-flex justify-content-start ms-2'>
+                        <div className='d-flex flex-row justify-content-start me-2'>
                             <a href={props.url}>
-                            <img className='' style={svgStyle} src="./svg/github.svg" ></img>
+                                <img className='' style={svgStyle} src="./svg/github.svg" ></img>
                             </a>
+                            <Link className='btn btn-link btn-block pl-2' to={`/project/${e.id}`}> Project </Link>
+
                         </div>
                     </div>
                 </div>

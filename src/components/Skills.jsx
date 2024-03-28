@@ -9,7 +9,8 @@ export default function Skills() {
         dark: {
         backgroundColor: "#282F44",
         borderRadius: 0.5 + "em",
-        width: 9 + "em"
+        width: 9 + "em",
+        height: "auto"
         },
         light: {
             backgroundColor: "#282F44",
@@ -30,7 +31,7 @@ export default function Skills() {
     const { themeName } = useTheme()
     return (
         <>
-            <div className={`pt-5  ${themeName === "dark" ? "dark-theme": "light-theme"}`}>
+            <div className={`pt-5  ${themeName === "dark" ? "dark-theme": "light-theme"}`} id="skills">
                 <div className='row'>
                     <div className='col-12 col-md-12 col-lg-6 offset-lg-5'>
                     <h2 className='ps-2'>My Skills</h2>
@@ -38,8 +39,9 @@ export default function Skills() {
                         {
                             front.map((e, i) => {
                                 return (
-                                    <div className='d-flex flex-column m-2 align-items-center justify-content-center' style={backgroundSkill[themeName]}>
-                                        <img src={e.photo} style={photoStyle} className=''></img>
+                                    <div className='d-flex flex-column m-2 align-items-center justify-content-between' style={backgroundSkill[themeName]}>
+                                        <img src={e.photo} style={photoStyle} className='pt-4'></img>
+                                        <h3 className=''>{e.name}</h3>
                                     </div>
                                 )
                             })
@@ -48,8 +50,9 @@ export default function Skills() {
                         {
                             back.map((e, i) => {
                                 return (
-                                    <div className='d-flex flex-column m-2 align-items-center justify-content-center' style={backgroundSkill[themeName]}>
+                                    <div className='d-flex flex-column m-2 align-items-center justify-content-between' style={backgroundSkill[themeName]}>
                                         <img src={e.photo} style={photoStyle} className=''></img>
+                                        <h3 className=''>{e.name}</h3>
                                     </div>
                                 )
                             })

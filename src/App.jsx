@@ -9,6 +9,7 @@ import Index from './components/Index'
 import { LanguageProvider } from './components/LanguageContext'
 import { ThemeProvider } from './components/ThemeContext'
 import './index.css'
+import { Outlet } from 'react-router-dom'
 function App() {
 
   return (
@@ -17,10 +18,7 @@ function App() {
         <LanguageProvider>
           <Header></Header>
           <div className='container-fluid'>
-            <Index></Index>
-            <AboutMe></AboutMe>
-            <Skills></Skills>
-            <Projects></Projects>
+            <Outlet></Outlet>
           </div>
           <Footer></Footer>
         </LanguageProvider>
