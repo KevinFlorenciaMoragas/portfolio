@@ -1,22 +1,17 @@
 import React from 'react'
 import photo from '../assets/photos/fotoLinkedin.jpg'
 import { useLanguage } from './LanguageContext'
+import { useTheme } from './ThemeContext'
 export default function AboutMe() {
-    const strongStyle = {
-        color: "#D31E0D",
-        fontSize: 1.7 + 'em'
-    }
     const letterStyle = {
-        color: "#F7F4F3",
         fontSize: 1.4 + "em"
     }
     const { translate } = useLanguage()
+    const { themeName } = useTheme()
     return (
-        <section className='row'>
-            <div className='col-lg-5 col-md-6 col-12 offset-lg-1 '>
-                <span style={letterStyle}>{translate('aboutMeText')} <strong style={strongStyle}>Kevin Florencia</strong>, </span> <span style={letterStyle}> {translate('aboutMeText2')}
-                </span>
-
+        <section className={`row  ${themeName === "dark" ? "dark-theme": "light-theme"}`}>
+            <div className='col-lg-5 col-md-12 col-12 offset-lg-1 '>
+                <span style={letterStyle}>{translate('aboutMeText'.replace(/\n/g, '<br />'))}  </span>
             </div>
         </section>
 

@@ -1,30 +1,33 @@
 import React from 'react'
 import "/node_modules/flag-icons/css/flag-icons.min.css"
 import { useLanguage } from './LanguageContext';
-
+import { useTheme } from './ThemeContext';
 export default function Header() {
 
-    const { translate , toggleLanguage, language } = useLanguage()
-    const headerStyle = {
-        background: 'rgb(40,47,68)',
-        backgroundImage: 'linear-gradient(135deg, rgba(40,47,68,1) 0%, rgba(89,105,149,1) 100%)',
-        color: '#EBEBEB',
-        height: "auto"
-    }
+    const { translate, toggleLanguage, language} = useLanguage()
+    const { toggleTheme, themeName } = useTheme()
+     const headerStyle = {
+         background: 'rgb(40,47,68)',
+         backgroundImage: 'linear-gradient(135deg, rgba(40,47,68,1) 0%, rgba(89,105,149,1) 100%)',
+         color: '#EBEBEB',
+         height: "auto"
+ }
+
     const fontStyle = {
         fontSize: 2 + "em",
-        color: '#EBEBEB',
+        color: '#EBEBEB !important',
+
     }
+    console.log(themeName)
 
     return (
         <>
-
-            <header className='d-flex flex-wrap justify-content-center mb-4 rounded fixed-top' style={headerStyle}>
+{/* ${themeName === "dark" ? "dark-theme": "light-theme"} */}
+            <header className={`d-flex flex-wrap justify-content-between mb-4 rounded fixed-top `} style={headerStyle}>
                 <div className='d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none'>
-                    {/* <img className="bi me-2" height={40} width={32} src={logo}></img> */}
                     <span className='ms-2' style={fontStyle}>{translate('headerTitle')}</span>
                 </div>
-                <div className='col-lg-7 col-md-4 d-none d-md-block'>
+                <div className='col-lg-8 d-none d-md-none d-lg-block'>
                     <ul className='nav nav-pills align-items-center' style={fontStyle}>
                         <li className='nav-item'>
                             <a className='nav-link'> {translate('aboutMe')}</a>
@@ -40,8 +43,8 @@ export default function Header() {
                         </li>
                     </ul>
                 </div>
-
-                <button className='btn btn-primary align-items-right' onClick={toggleLanguage}>{
+                <div className='col-md-3 col-lg-3 d-flex flex-row justify-content-center align-items-center d-none d-md-block'>
+                <button className='btn btn-primary ' onClick={toggleLanguage}>{
                     language === 'es' ? (
                         <span className="fi fi-es"></span>
                     ) : (
@@ -49,6 +52,10 @@ export default function Header() {
                     )
                 }
                 </button>
+                <button className='btn btn-primary  ' onClick={toggleTheme}> Change theme
+                    
+                </button>
+                </div>
             </header>
         </>
     )

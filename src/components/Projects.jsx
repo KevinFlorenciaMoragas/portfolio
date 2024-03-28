@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import projectData from '../assets/projects.json'
 import Card from './Card'
-
+import { useTheme } from './ThemeContext'
 export default function Projects() {
 
     const [projects, setProjects] = useState([])
@@ -13,10 +13,10 @@ export default function Projects() {
     if (projects == "") {
         return <h1>Cargando infromacion</h1>
     }
-
+    const { themeName } = useTheme()
     return (
         <>
-            <div className='pt-5' id="projects">
+           <div className={`pt-5  ${themeName === "dark" ? "dark-theme": "light-theme"}`} id='projects'>
             {
                 projects.map((e, i) => {
                     return (

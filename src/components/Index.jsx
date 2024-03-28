@@ -1,13 +1,14 @@
 import React from 'react'
 import photo from '../assets/photos/fotoLinkedin.jpg'
 import { useLanguage } from './LanguageContext'
+import { useTheme } from './ThemeContext'
 export default function Index() {
     const titleStyle = {
         color: "#8895BF",
-        fontSize: 5 + "em"
+        fontSize: 4 + "em"
     }
     const sectionStyle = {
-        height: 90 + "vh",
+        height: 100 + "vh",
         display: "flex",
         alignItems: "center"
     }
@@ -24,11 +25,12 @@ export default function Index() {
         fontSize: 3 + "em"
     }
     const { translate } = useLanguage()
+    const {themeName} = useTheme()
     return (
-        <section className='row mt-5' style={sectionStyle}>
+        <section className={`row mt-5  ${themeName === "dark" ? "dark-theme": "light-theme"}`} style={sectionStyle}>
 
-            <div className='d-flex flex-column col-12 col-md-6 col-lg-5  offset-lg-1'>
-                <h3 className='' style={helloStyle}>{translate(('hello'))}!</h3>
+            <div className={`d-flex flex-column col-12 col-md-6 col-lg-5 col-xl-6  offset-lg-1 ${themeName === "dark" ? "dark-theme": "light-theme"}`}>
+                <h3 className='' style={helloStyle}>{translate(('hello'))}</h3>
                 <h2 className='' style={titleStyle}>{translate(('title'))}</h2>
                 <h4 className='' >{translate('web')}</h4>
                 <div className='d-flex flex-row '>

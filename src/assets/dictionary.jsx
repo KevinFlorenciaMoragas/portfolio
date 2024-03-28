@@ -4,11 +4,10 @@ const dictionary = {
         aboutMe: 'Sobre mi',
         projects: 'Proyectos',
         contact: 'Contacto',
-        hello: 'Hola!',
+        hello: '¡Hola!',
         title: 'Soy un desarrollador web',
         web: 'Creo contenido para paginas web',
-        aboutMeText: 'Hola! Me llamo,',
-        aboutMeText2: 'y soy un apasionado programador web con sede en Barcelona. Con un gran interés en la tecnología y un amor por crear experiencias digitales, prospero en el dinámico mundo del desarrollo web',
+        aboutMeText: 'Hola! Me llamo, Kevin Florencia Moragas, Desarrollador web con mayor experiencia en backend.Destaco mis conocimientos tecnológicos en React y Angular.\n Me defino como un apasionado de laprogramación y como un profesiona versátil con ganas de aprender. \n He trabajado en diferentes sectores con experiencia cara al público, donde he desarrollado diversas competencias sociales y profesionales.\n Actualmente me encuentro en búsqueda de nuevos retos profesionales.',
         skills: 'Competencias',
 
     },
@@ -20,8 +19,7 @@ const dictionary = {
         hello: 'Hello!',
         title: "I'm  a web Developer",
         web: 'I build things for web',
-        aboutMeText: 'Hello! My name is ',
-        aboutMeText2: "and I'm a passionate web programmer based in Barcelona. With a keen interest in technology and a love for crafting digital experiences, I thrive in the dynamic world of web development.",
+        aboutMeText: 'Hello! My name is Kevin Florencia Moragas, a web developer with extensive backend experience. I highlight my technological skills in React and Angular.\n I define myself as a passionate programmer and as a versatile professional eager to learn. \n I have worked in different sectors with customer-facing experience, where I have developed various social and professional competencies. \n Currently, I am seeking new professional challenges.',
         skills: 'Skills',
     }
 }
