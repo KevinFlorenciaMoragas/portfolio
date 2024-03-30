@@ -10,6 +10,7 @@ const dictionary = {
         aboutMeText: 'Hola! Me llamo, Kevin Florencia Moragas, Desarrollador web con mayor experiencia en backend.Destaco mis conocimientos tecnológicos en React y Angular.\n Me defino como un apasionado de laprogramación y como un profesiona versátil con ganas de aprender. \n He trabajado en diferentes sectores con experiencia cara al público, donde he desarrollado diversas competencias sociales y profesionales.\n Actualmente me encuentro en búsqueda de nuevos retos profesionales.',
         skills: 'Competencias',
         moreInfo: 'Más información',
+        github: 'Ver en Github'
 
     },
     en: {
@@ -23,6 +24,7 @@ const dictionary = {
         aboutMeText: 'Hello! My name is Kevin Florencia Moragas, a web developer with extensive backend experience. I highlight my technological skills in React and Angular.\n I define myself as a passionate programmer and as a versatile professional eager to learn. \n I have worked in different sectors with customer-facing experience, where I have developed various social and professional competencies. \n Currently, I am seeking new professional challenges.',
         skills: 'Skills',
         moreInfo: 'More info',
+        github: 'View on Github'
     }
 }
 export default dictionary

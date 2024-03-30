@@ -3,12 +3,14 @@ import { useParams } from 'react-router-dom'
 import projectData from '../assets/projects.json'
 import { useTheme } from './ThemeContext'
 import SkillCard from './SkillCard'
+import { useLanguage } from './LanguageContext'
 export default function project() {
   const { id } = useParams()
   console.log(id)
   const project = projectData.data.find(e => e.id == id)
   console.log(project)
   const { themeName } = useTheme()
+  const {translate} = useLanguage()
   const preStyle = {
     whiteSpace: 'pre-wrap',
     fontFamily: 'Arial, sans-serif',
@@ -21,8 +23,8 @@ export default function project() {
     justifyContent: 'center',
     alignItems: 'center',
     padding: '0 20px',
-    backgroundColor: themeName === "dark" ? "#282F44" : "#E8E9F3",
-    color: themeName === "dark" ? "#EBEBEB" : "#282F44"
+    backgroundColor: themeName === "dark" ? "#222844" : "#BABABB",
+    color: themeName === "dark" ? "#EBEBEB" : "#46494C"
 
   }
   return (
@@ -37,14 +39,22 @@ export default function project() {
           </div>
           <div className='col-12 col-md-12 col-lg-6'>
             <pre style={preStyle} className=''>{project.longDescription}</pre>
-          </div>
-          <div className='d-flex flex-row justify-content-center align-items-center   '>
+          
+          <div className='d-flex flex-row  align-items-center justify-content-between   '>
+            <div className='d-flex flex-row'>
             {project.tec.map((e, i) => {
               return (
                 <SkillCard key={i} photo={e.photo} name={e.name}></SkillCard>
               )
             })
             }
+            </div>
+            <div className=''>
+            <a href={project.url} className='btn btn-primary'>
+                <img src='/svg/github.svg' alt='github' className='img-fluid' width={20} />
+               {translate(("github"))}</a>
+            </div>
+            </div>
           </div>
         </div>
 

@@ -10,11 +10,11 @@
             "tec": [
                 {
                     "name": "SpringBoot",
-                    "photo": "./svg/spring.svg"
+                    "photo": "/svg/spring.svg"
                 },
                 {
                     "name": "MySQL",
-                    "photo": "./svg/mysql.svg"
+                    "photo": "/svg/mysql.svg"
                 }
             ]
         },
