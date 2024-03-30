@@ -2,6 +2,7 @@ import React from 'react'
 import "/node_modules/flag-icons/css/flag-icons.min.css"
 import { useLanguage } from './LanguageContext';
 import { useTheme } from './ThemeContext';
+import { Link } from 'react-router-dom'
 // import darkMode from "../../public/svg/dark-mode-night-moon-svgrepo-com.svg"
 export default function Header() {
 
@@ -37,10 +38,13 @@ export default function Header() {
 
     return (
         <>
-            <header className={`d-flex flex-wrap justify-content-between mb-4  fixed-top `} style={headerStyle}>
-                <div className='col-2 col-md-2 col-lg-2  d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none'>
-                    <span className='ms-2' style={fontStyle}>{translate('headerTitle')}</span>
+        {/* fixed-top */}
+            <header className={`d-flex flex-wrap justify-content-between   `} style={headerStyle}>
+                
+                <div className='col-2 col-md-2 col-lg-2  d-flex align-items-center mb-3 mb-md-0 me-md-auto '>
+                <Link to='/' className='text-decoration-none'>   <span className='ms-2' style={fontStyle}>{translate('headerTitle')}</span> </Link>
                 </div>
+                
                 <div className='col-lg-6 d-none d-md-none d-lg-block'>
                     <ul className='nav nav-pills align-items-center' style={fontStyle}>
                         <li className='nav-item'>

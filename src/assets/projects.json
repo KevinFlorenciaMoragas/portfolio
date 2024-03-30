@@ -1,48 +1,88 @@
 {
     "data": [
         {
-            "id":1,
+            "id": 1,
             "name": "API PelisCorp",
             "description": "API desarrollada en Java con el framework SpringBoot",
-            "photo": "./photos/projectPhoto.jpg",
+            "longDescription":"Esta API desarrollada en Spring Boot es una poderosa herramienta diseñada para facilitar el desarrollo de aplicaciones web y móviles que requieren funcionalidades de backend sólidas y eficientes.\nSpring Boot, conocido por su simplicidad y facilidad de uso, ofrece un marco de trabajo robusto y bien estructurado que permite a los desarrolladores crear API RESTful de manera rápida y efectiva.\nCon esta API, los desarrolladores pueden implementar una amplia gama de características y servicios, desde la gestión de usuarios y autenticación hasta el almacenamiento de datos y la lógica de negocio.\nUtilizando los principios de la arquitectura REST, la API proporciona endpoints claramente definidos que permiten a las aplicaciones cliente realizar operaciones CRUD (crear, leer, actualizar y eliminar) en los recursos proporcionados por el servidor.\nAdemás de su potencia y flexibilidad, la API desarrollada en Spring Boot se distingue por su seguridad y fiabilidad. Incorpora mecanismos de seguridad estándar, como la autenticación basada en tokens JWT (JSON Web Tokens), para proteger los datos y garantizar el acceso autorizado a los recursos.\nAdemás, gracias a la robustez y estabilidad de Spring Boot, la API ofrece un rendimiento óptimo y una alta disponibilidad, lo que la convierte en una opción ideal para aplicaciones que requieren una infraestructura backend confiable.\nEntre las características destacadas de esta API se incluyen la gestión de errores y excepciones de forma elegante, la documentación automática mediante herramientas como Swagger, y la integración sencilla con otros servicios y tecnologías gracias al ecosistema extenso de Spring.\nEstas características, combinadas con la simplicidad de desarrollo que ofrece Spring Boot, hacen de esta API una opción poderosa y versátil para proyectos web y móviles de cualquier escala y complejidad.",
+            "photo": "/photos/projectPhoto.jpg",
             "url": "https://github.com/KevinFlorenciaMoragas/ApiPelisCorp/",
             "tec": [
-                "SpringBoot"
+                {
+                    "name": "SpringBoot",
+                    "photo": "./svg/spring.svg"
+                },
+                {
+                    "name": "MySQL",
+                    "photo": "./svg/mysql.svg"
+                }
             ]
         },
         {
-            "id":2,
+            "id": 2,
             "name": "PelisCorp",
             "description": "Pagina web desarrollada con Angular en la que se pueden ver y comentar diferentes películas, como IMDB, además de gestión de administrador para añadir nuevas películas",
-            "photo": "./photos/projectPhoto.jpg",
+            "longDescription":"Este proyecto web desarrollado con Angular es una plataforma completa y dinámica dedicada a ofrecer una experiencia integral de reseñas de películas, similar al reconocido sitio web IMDB.\nDiseñada para satisfacer las necesidades y preferencias de los aficionados al cine, esta aplicación web proporciona una amplia gama de características y funcionalidades que permiten a los usuarios explorar, descubrir y disfrutar del emocionante mundo del cine.\nCon una interfaz de usuario moderna y atractiva, los usuarios pueden navegar de manera intuitiva a través de una vasta colección de películas de diversos géneros, años de estreno y calificaciones.\nDesde los clásicos del cine hasta los últimos estrenos, cada película cuenta con una página dedicada que ofrece información detallada, como el reparto, la sinopsis, las críticas de los usuarios y las calificaciones. Además de explorar películas, los usuarios tienen la oportunidad de participar activamente en la comunidad de reseñas de la plataforma.\nPueden escribir sus propias reseñas, calificar películas, comentar las opiniones de otros usuarios y compartir sus recomendaciones con amigos y seguidores. Esta interacción social agrega un aspecto colaborativo y participativo a la experiencia de descubrimiento cinematográfico.\nLa aplicación también ofrece características avanzadas, como la capacidad de crear listas de películas personalizadas, seguir a otros usuarios con gustos similares, recibir recomendaciones personalizadas basadas en el historial de visualización y más.\nEstas características mejoran la personalización y la relevancia de las recomendaciones, lo que permite a los usuarios descubrir nuevas películas que se ajusten a sus intereses y preferencias individuales.\nEn resumen, este proyecto web de reseñas de películas desarrollado con Angular proporciona una plataforma integral y emocionante para que los entusiastas del cine exploren, compartan y disfruten de su pasión por el séptimo arte de una manera interactiva y enriquecedora.",
+            "photo": "/photos/projectPhoto.jpg",
             "url": "https://github.com/KevinFlorenciaMoragas/PelisCorp",
             "tec": [
-                "Angular",
-                "BootStrap"
+                {
+                    "name": "SpringBoot",
+                    "photo": "/svg/spring.svg"
+                },
+                {
+                    "name": "Angular",
+                    "photo": "/svg/angular.svg"
+                }
             ]
         },
         {
-            "id":3,
+            "id": 3,
             "name": "Regira",
             "description": "Aplicación web desarrollada en React en la que se pueden manejar las tareas de diferentes proyectos, como Trello",
-            "photo": "./photos/projectPhoto.jpg",
+            "longDescription":"Esta aplicación web desarrollada con React es una plataforma de gestión de proyectos altamente funcional, que se asemeja a la popular herramienta Trello.\nDiseñada para equipos y profesionales que necesitan una manera eficiente de organizar y supervisar proyectos, esta aplicación ofrece una serie de características y herramientas poderosas para facilitar la colaboración y la productividad.\nEn la interfaz de usuario de estilo Trello, los usuarios pueden crear tableros personalizados para cada proyecto, con listas y tarjetas que representan tareas y actividades específicas.\nLas tarjetas pueden ser arrastradas y soltadas entre las listas para cambiar su estado, lo que permite un seguimiento visual del progreso del proyecto.\nAdemás de las funciones básicas de creación y organización de tableros y tarjetas, la aplicación ofrece una variedad de características avanzadas para mejorar la gestión de proyectos.\nEsto incluye la capacidad de asignar tareas a miembros del equipo, establecer fechas límite, adjuntar archivos y comentarios a las tarjetas, y recibir notificaciones sobre actualizaciones y cambios en tiempo real.\nLa aplicación también proporciona herramientas de análisis y seguimiento para evaluar el rendimiento del proyecto y la carga de trabajo del equipo.\nLos usuarios pueden generar informes y gráficos personalizados para visualizar el progreso del proyecto, identificar cuellos de botella y tomar decisiones informadas sobre la asignación de recursos y la planificación futura.\nCon su diseño intuitivo y su enfoque en la colaboración en equipo, esta aplicación web en React ofrece una solución completa y efectiva para la gestión de proyectos, ayudando a los equipos a trabajar de manera más eficiente y a alcanzar sus objetivos de manera más efectiva.",
+            "photo": "/photos/projectPhoto.jpg",
             "url": "https://github.com/KevinFlorenciaMoragas/Regira",
             "tec": [
-                "React",
-                "NodeJs"
+                {
+                    "name": "React",
+                    "photo": "/svg/react.svg"
+                },
+                {
+                    "name": "NodeJs",
+                    "photo": "/svg/nodejs.svg"
+                },
+                {
+                    "name": "ExpressJs",
+                    "photo": "/svg/expressjs.svg"
+                },
+                {
+                    "name": "Sequelize",
+                    "photo": "/svg/sequelize.svg"
+                }
             ]
         },
         {
-            "id":4,
+            "id": 4,
             "name": "Astrogram",
             "description": "Web desarrolada integramente con Astro en la que los usuarios pueden subir fotos y ver las fotos de los demás usuarios. La API del proyecto desarrolada en NodeJs",
-            "photo": "./photos/projectPhoto.jpg",
-            "url":"https://github.com/KevinFlorenciaMoragas/Astrogram",
-            "tec":[
-                "Astro",
-                "NodeJs"
+            "longDescription":"Esta web desarrollada con Astro es una emocionante plataforma que ofrece una experiencia similar a Instagram, pero con un enfoque específico en compartir y explorar fotografías.\nAstro, conocido por su velocidad y eficiencia, proporciona un entorno de desarrollo moderno y flexible que permite a los desarrolladores crear aplicaciones web rápidas y receptivas.\nEn esta plataforma estilo Instagram, los usuarios pueden crear perfiles personales, cargar y compartir sus propias fotografías, y descubrir contenido visualmente atractivo de otros usuarios.\nCada fotografía cuenta con una página dedicada que permite a los usuarios interactuar mediante likes, comentarios y compartirlas con sus seguidores.\nAdemás de las funciones básicas de compartir y explorar fotografías, la plataforma ofrece características avanzadas que mejoran la experiencia del usuario.\nEsto incluye la capacidad de crear álbumes de fotos, seguir a otros usuarios con intereses similares, recibir notificaciones sobre nuevas publicaciones y participar en desafíos fotográficos y concursos.\nLa web desarrollada en Astro se destaca por su rendimiento optimizado y su enfoque en la experiencia del usuario.\nGracias a la arquitectura basada en componentes de Astro y su capacidad para renderizar contenido estático de forma eficiente, la plataforma ofrece tiempos de carga rápidos y una navegación fluida en todos los dispositivos y conexiones de red.\nCon su interfaz de usuario intuitiva y su diseño visualmente atractivo, esta web en Astro proporciona a los usuarios una experiencia inmersiva y agradable, convirtiéndola en el destino ideal para aquellos que desean compartir y descubrir fotografías inspiradoras y creativas en línea.",
+            "photo": "/photos/projectPhoto.jpg",
+            "url": "https://github.com/KevinFlorenciaMoragas/Astrogram",
+            "tec": [
+                {
+                    "name": "Astro",
+                    "photo": "/svg/astro.svg"
+                },
+                {
+                    "name": "NodeJs",
+                    "photo": "/svg/nodejs.svg"
+                },
+                {
+                    "name": "ExpressJs",
+                    "photo": "/svg/expressjs.svg"
+                }
             ]
-
         }
     ]
 }

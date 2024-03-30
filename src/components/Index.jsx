@@ -6,8 +6,11 @@ import AboutMe from './AboutMe'
 import Skills from './Skills'
 import Projects from './Projects'
 export default function Index() {
+    const { translate } = useLanguage()
+    const { themeName } = useTheme()
+    
     const titleStyle = {
-        color: "#8895BF",
+        color: themeName === "dark" ? "#8895BF" : "#251F47", 
         fontSize: 4 + "em"
     }
     const sectionStyle = {
@@ -27,11 +30,10 @@ export default function Index() {
     const helloStyle = {
         fontSize: 3 + "em"
     }
-    const { translate } = useLanguage()
-    const { themeName } = useTheme()
+
     return (
         <>
-            <section className={`row mt-5  ${themeName === "dark" ? "dark-theme" : "light-theme"}`} style={sectionStyle} id="index">
+            <section className={`row   ${themeName === "dark" ? "dark-theme" : "light-theme"}`} style={sectionStyle} id="index">
 
                 <div className={`d-flex flex-column col-12 col-md-6 col-lg-5 col-xl-6  offset-lg-1 ${themeName === "dark" ? "dark-theme" : "light-theme"}`}>
                     <h3 className='' style={helloStyle}>{translate(('hello'))}</h3>
@@ -43,9 +45,9 @@ export default function Index() {
                         <a href='mailto:kevinflorencia@gmail.com'><img style={svgStyle} src='./svg/email.svg'></img></a>
                     </div>
                 </div>
-                <div className='col-lg-2 col-md-2 col-12 '>
+                {/* <div className='col-lg-2 col-md-2 col-12 '>
                     <img style={photoStyle} src={photo}></img>
-                </div>
+                </div> */}
 
             </section>
             <AboutMe></AboutMe>

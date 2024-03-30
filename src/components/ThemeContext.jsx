@@ -8,11 +8,11 @@ export const ThemeProvider = ({ children }) => {
 
   const themes = {
     dark: {
-      background: '#222844',
+      backgroundColor: '#222844',
       color: '#EBEBEB',
     },
     light: {
-      background: '#dfdfdf',
+      backgroundColor: '#1B4965',
       color: '#000000',
     }
   }

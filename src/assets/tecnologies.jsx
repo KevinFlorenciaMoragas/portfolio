@@ -3,27 +3,27 @@ export const backend = {
     "data":[,
         {
             "name":"Java",
-            "photo":"./svg/java.svg"
+            "photo":"/svg/java.svg"
         },
         {
             "name":"SpringBoot",
-            "photo":"./svg/spring.svg"
+            "photo":"/svg/spring.svg"
         },
         {
             "name":"NodeJs",
-            "photo":"./svg/nodejs.svg"
+            "photo":"/svg/nodejs.svg"
         },
         {
             "name":"ExpressJs",
-            "photo":"./svg/expressjs.svg"
+            "photo":"/svg/expressjs.svg"
         },
         {
             "name":"Sequelize",
-            "photo":"./svg/sequelize.svg"
+            "photo":"/svg/sequelize.svg"
         },
         {
             "name":"MySQL",
-            "photo":"./svg/mysql.svg"
+            "photo":"/svg/mysql.svg"
         },
 
 
@@ -33,19 +33,19 @@ export const frontend = {
     "data":[
         {
             "name":"Angular",
-            "photo":"./svg/angular.svg"
+            "photo":"/svg/angular.svg"
         },
         {
             "name":"React",
-            "photo":"./svg/react.svg"
+            "photo":"/svg/react.svg"
         },
         {
             "name":"Astro",
-            "photo":"./svg/astro.svg"
+            "photo":"/svg/astro.svg"
         },
         {
             "name":"BootStrap",
-            "photo":"./svg/bootstrap.svg"
+            "photo":"/svg/bootstrap.svg"
         }
     ]
 }
