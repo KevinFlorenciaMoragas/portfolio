@@ -50,7 +50,7 @@ export default function project() {
             }
             </div>
             <div className=''>
-            <a href={project.url} className='btn btn-primary'>
+            <a href={project.url} className='btn btn-primary' target="_blank">
                 <img src='/svg/github.svg' alt='github' className='img-fluid' width={20} />
                {translate(("github"))}</a>
             </div>
