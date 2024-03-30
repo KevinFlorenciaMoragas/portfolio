@@ -41,7 +41,7 @@ export default function project() {
             <pre style={preStyle} className=''>{project.longDescription}</pre>
           
           <div className='d-flex flex-row  align-items-center justify-content-between   '>
-            <div className='d-flex flex-row'>
+            <div className='d-flex flex-row flex-wrap'>
             {project.tec.map((e, i) => {
               return (
                 <SkillCard key={i} photo={e.photo} name={e.name}></SkillCard>
