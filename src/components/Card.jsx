@@ -1,5 +1,4 @@
 import React from 'react';
-import "./card.css"
 import { useNavigate, Link } from 'react-router-dom';
 import { useTheme } from './ThemeContext';
 export default function Card(props) {
