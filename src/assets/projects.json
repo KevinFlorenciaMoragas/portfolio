@@ -1,6 +1,37 @@
 {
     "data": [
         {
+            "id":1,
+            "name": "Aquasfera",
+            "description": "Aplicación web desarrollada en React y NodeJs en una parte enciclopedia marina y en otra parte de red social",
+            "longDescription":"Aplicacion web desarrollada en React y NodeJs que se ha desarrollado con el objetivo de concienciar a la gente sobre los ecosistemas marinos en un bootcamp de programación Javascript.\nUsando React se ha desararollado la parte del frontend donde los usuarios de la web pueden ver la información de los peces de los 3 mares que rodean la península íberica, además de la red social al estilo instagram donde los usuarios pueden subir fotos y interactuar con otros usuarios.\nLa parte del backend se ha desarrollado usando NodeJs con Express y Sequelize para la facilidad de conectar con la base de datos MySQL."
+            ,"photo": "/photos/projectPhoto.jpg",
+            "url": "https://github.com/Aquasfera/",
+            "tec": [
+                {
+                    "name": "React",
+                    "photo": "/svg/react.svg"
+                },
+                {
+                    "name": "NodeJs",
+                    "photo": "/svg/nodejs.svg"
+                },
+                {
+                    "name": "ExpressJs",
+                    "photo": "/svg/expressjs.svg"
+                },
+                {
+                    "name": "Sequelize",
+                    "photo": "/svg/sequelize.svg"
+                },
+                {
+                    "name": "MySQL",
+                    "photo": "/svg/mysql.svg"
+                }
+            ]
+        },
+
+        {
             "id": 1,
             "name": "API PelisCorp",
             "description": "API desarrollada en Java con el framework SpringBoot",
